@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersécurité au Mali - Guide Complet</title>
+    <meta name="description" content="Guide complet sur la cybersécurité au Mali : menaces, bonnes pratiques, arnaques courantes et protection des données">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="cybersecurity.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">CyberSécurité & IA Mali</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="cybersecurity.html" class="nav-link active">Cybersécurité</a>
+                <a href="ai.html" class="nav-link">Intelligence Artificielle</a>
+                <a href="resources.html" class="nav-link">Ressources</a>
+                <a href="about.html" class="nav-link">À Propos</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="cyber-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="icon">🛡️</span>
+                    Cybersécurité au Mali
+                </h1>
+                <p class="hero-subtitle">
+                    Protégez-vous contre les menaces numériques et apprenez les bonnes pratiques 
+                    de sécurité adaptées au contexte malien.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">232</span>
+                        <span class="stat-label">Plaintes cybercriminalité (6 mois)</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10M$</span>
+                        <span class="stat-label">Rançon demandée BOA Mali</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="toc-section">
+        <div class="container">
+            <div class="toc-card">
+                <h2>Sommaire</h2>
+                <ul class="toc-list">
+                    <li><a href="#introduction">1. Introduction à la Cybersécurité</a></li>
+                    <li><a href="#menaces">2. Menaces Courantes au Mali</a></li>
+                    <li><a href="#arnaques">3. Arnaques Fréquentes</a></li>
+                    <li><a href="#bonnes-pratiques">4. Bonnes Pratiques de Sécurité</a></li>
+                    <li><a href="#protection-donnees">5. Protection des Données</a></li>
+                    <li><a href="#cas-pratiques">6. Cas Pratiques Maliens</a></li>
+                    <li><a href="#outils">7. Outils et Ressources</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>1. Introduction à la Cybersécurité</h2>
+                <p class="section-intro">
+                    La cybersécurité est l'ensemble des moyens techniques, organisationnels et humains 
+                    nécessaires pour assurer la protection des systèmes d'information contre les cybermenaces.
+                </p>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">🔐</div>
+                    <h3>Qu'est-ce que la Cybersécurité ?</h3>
+                    <p>
+                        La cybersécurité consiste à protéger les ordinateurs, serveurs, appareils mobiles, 
+                        systèmes électroniques, réseaux et données contre les attaques malveillantes. 
+                        Au Mali, avec l'augmentation de l'utilisation d'internet (33,1% de taux de pénétration), 
+                        la cybersécurité devient cruciale pour protéger les citoyens et les entreprises.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Situation au Mali</h3>
+                    <p>
+                        Le Mali fait face à une augmentation des cybermenaces. En 6 mois, 232 plaintes 
+                        pour cybercriminalité ont été enregistrées. L'attaque contre la Bank of Africa Mali 
+                        (BOA Mali) avec une demande de rançon de 10 millions de dollars illustre la gravité 
+                        de la situation.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-icon">⚖️</div>
+                    <h3>Cadre Légal</h3>
+                    <p>
+                        Le Mali a adopté la loi n° 2019-056 sur la répression de la cybercriminalité en 
+                        décembre 2019. Cette loi définit les infractions cybernétiques et leurs sanctions, 
+                        incluant l'accès illégal aux systèmes, la manipulation de données et les menaces 
+                        en ligne.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menaces Section -->
+    <section id="menaces" class="content-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>2. Menaces Courantes au Mali</h2>
+                <p class="section-intro">
+                    Découvrez les principales cybermenaces qui touchent le Mali et l'Afrique de l'Ouest.
+                </p>
+            </div>
+
+            <div class="threat-grid">
+                <div class="threat-card">
+                    <div class="threat-icon">🎣</div>
+                    <h3>Phishing (Hameçonnage)</h3>
+                    <div class="threat-level high">Risque Élevé</div>
+                    <p>
+                        Technique consistant à envoyer de faux e-mails ou SMS provenant de sources 
+                        apparemment légitimes pour obtenir des informations sensibles comme les 
+                        mots de passe ou les données bancaires.
+                    </p>
+                    <div class="threat-examples">
+                        <h4>Exemples au Mali :</h4>
+                        <ul>
+                            <li>Faux e-mails de banques maliennes</li>
+                            <li>SMS frauduleux Orange Money</li>
+                            <li>Fausses notifications de services gouvernementaux</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="threat-card">
+                    <div class="threat-icon">🦠</div>
+                    <h3>Logiciels Malveillants</h3>
+                    <div class="threat-level high">Risque Élevé</div>
+                    <p>
+                        Programmes conçus pour infiltrer ou endommager un système informatique 
+                        sans le consentement de l'utilisateur. Incluent les virus, vers, 
+                        chevaux de Troie et spywares.
+                    </p>
+                    <div class="threat-examples">
+                        <h4>Types courants :</h4>
+                        <ul>
+                            <li>Virus via clés USB</li>
+                            <li>Applications mobiles malveillantes</li>
+                            <li>Logiciels piratés infectés</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="threat-card">
+                    <div class="threat-icon">🔒</div>
+                    <h3>Rançongiciels (Ransomware)</h3>
+                    <div class="threat-level critical">Risque Critique</div>
+                    <p>
+                        Logiciels malveillants qui bloquent l'accès aux données ou au système 
+                        informatique et exigent une rançon pour les débloquer. L'attaque contre 
+                        BOA Mali en est un exemple récent.
+                    </p>
+                    <div class="threat-examples">
+                        <h4>Cas récents :</h4>
+                        <ul>
+                            <li>Bank of Africa Mali (10M$ de rançon)</li>
+                            <li>Entreprises de télécommunications</li>
+                            <li>Institutions gouvernementales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="threat-card">
+                    <div class="threat-icon">⚡</div>
+                    <h3>Attaques DDoS</h3>
+                    <div class="threat-level medium">Risque Moyen</div>
+                    <p>
+                        Attaques par déni de service distribué visant à rendre une ressource 
+                        en ligne indisponible en la submergeant d'un trafic malveillant.
+                    </p>
+                    <div class="threat-examples">
+                        <h4>Cibles fréquentes :</h4>
+                        <ul>
+                            <li>Sites web gouvernementaux</li>
+                            <li>Plateformes de commerce électronique</li>
+                            <li>Services bancaires en ligne</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arnaques Section -->
+    <section id="arnaques" class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>3. Arnaques Fréquentes au Mali</h2>
+                <p class="section-intro">
+                    Les escroqueries en ligne sont en augmentation au Mali. Apprenez à les reconnaître et à vous en protéger.
+                </p>
+            </div>
+
+            <div class="scam-accordion">
+                <div class="scam-item">
+                    <div class="scam-header">
+                        <h3>💰 Arnaques Orange Money</h3>
+                        <span class="scam-frequency">Très Fréquent</span>
+                    </div>
+                    <div class="scam-content">
+                        <p><strong>Description :</strong> Utilisation frauduleuse du service de paiement mobile Orange Money pour des transactions non autorisées.</p>
+                        <div class="scam-details">
+                            <div class="scam-method">
+                                <h4>Méthodes utilisées :</h4>
+                                <ul>
+                                    <li>Faux SMS demandant de confirmer une transaction</li>
+                                    <li>Appels se faisant passer pour le service client Orange</li>
+                                    <li>Demande de code PIN sous de faux prétextes</li>
+                                </ul>
+                            </div>
+                            <div class="scam-prevention">
+                                <h4>Comment se protéger :</h4>
+                                <ul>
+                                    <li>Ne jamais partager votre code PIN</li>
+                                    <li>Vérifier l'identité de l'appelant</li>
+                                    <li>Signaler au 7400 en cas de doute</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scam-item">
+                    <div class="scam-header">
+                        <h3>📹 Arnaques à la Webcam</h3>
+                        <span class="scam-frequency">Fréquent</span>
+                    </div>
+                    <div class="scam-content">
+                        <p><strong>Description :</strong> Chantage exercé sur une personne à l'aide d'images ou de vidéos intimes obtenues via sa webcam.</p>
+                        <div class="scam-details">
+                            <div class="scam-method">
+                                <h4>Méthodes utilisées :</h4>
+                                <ul>
+                                    <li>Faux profils sur les réseaux sociaux</li>
+                                    <li>Demandes de vidéoconférences intimes</li>
+                                    <li>Enregistrement secret des conversations</li>
+                                </ul>
+                            </div>
+                            <div class="scam-prevention">
+                                <h4>Comment se protéger :</h4>
+                                <ul>
+                                    <li>Méfiance avec les inconnus en ligne</li>
+                                    <li>Couvrir sa webcam quand elle n'est pas utilisée</li>
+                                    <li>Ne pas accepter de demandes intimes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scam-item">
+                    <div class="scam-header">
+                        <h3>💎 Systèmes de Ponzi (Qnet, etc.)</h3>
+                        <span class="scam-frequency">Récurrent</span>
+                    </div>
+                    <div class="scam-content">
+                        <p><strong>Description :</strong> Systèmes d'investissement frauduleux qui promettent des rendements élevés mais utilisent l'argent des nouveaux investisseurs pour payer les anciens.</p>
+                        <div class="scam-details">
+                            <div class="scam-method">
+                                <h4>Signaux d'alarme :</h4>
+                                <ul>
+                                    <li>Promesses de gains rapides et élevés</li>
+                                    <li>Système de parrainage obligatoire</li>
+                                    <li>Manque de transparence sur les investissements</li>
+                                </ul>
+                            </div>
+                            <div class="scam-prevention">
+                                <h4>Comment se protéger :</h4>
+                                <ul>
+                                    <li>Vérifier l'autorisation des organismes financiers</li>
+                                    <li>Se méfier des promesses irréalistes</li>
+                                    <li>Consulter les autorités en cas de doute</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonnes Pratiques Section -->
+    <section id="bonnes-pratiques" class="content-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>4. Bonnes Pratiques de Sécurité</h2>
+                <p class="section-intro">
+                    Adoptez ces pratiques essentielles pour protéger vos données et votre vie privée en ligne.
+                </p>
+            </div>
+
+            <div class="practices-grid">
+                <div class="practice-category">
+                    <h3>🔑 Gestion des Mots de Passe</h3>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <div class="practice-icon">✅</div>
+                            <div class="practice-content">
+                                <h4>Créer des mots de passe forts</h4>
+                                <p>Utilisez au moins 12 caractères avec un mélange de lettres majuscules, minuscules, chiffres et symboles.</p>
+                                <div class="example">
+                                    <strong>Exemple :</strong> Bamako2025!@#
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <div class="practice-icon">✅</div>
+                            <div class="practice-content">
+                                <h4>Un mot de passe unique par compte</h4>
+                                <p>N'utilisez jamais le même mot de passe pour plusieurs comptes importants.</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <div class="practice-icon">✅</div>
+                            <div class="practice-content">
+                                <h4>Utiliser un gestionnaire de mots de passe</h4>
+                                <p>Des outils comme Bitwarden ou LastPass peuvent générer et stocker vos mots de passe en sécurité.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-category">
+                    <h3>🔐 Authentification à Deux Facteurs (2FA)</h3>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <div class="practice-icon">✅</div>
+                            <div class="practice-content">
+                                <h4>Activer la 2FA partout où c'est possible</h4>
+                                <p>Ajoutez une couche de sécurité supplémentaire à vos comptes importants.</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <div class="practice-icon">✅</div>
+                            <div class="practice-content">
+                                <h4>Utiliser une application d'authentification</h4>
+                                <p>Google Authenticator ou Authy sont plus sécurisés que les SMS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-category">
+                    <h3>📱 Sécurité Mobile</h3>
+                    <div class="practice-list">
+                        <div class="practice-item">
+                            <div class="practice-icon">✅</div>
+                            <div class="practice-content">
+                                <h4>Télécharger uniquement depuis les stores officiels</h4>
+                                <p>Google Play Store ou App Store pour éviter les applications malveillantes.</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <div class="practice-icon">✅</div>
+                            <div class="practice-content">
+                                <h4>Maintenir le système à jour</h4>
+                                <p>Installez régulièrement les mises à jour de sécurité.</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <div class="practice-icon">✅</div>
+                            <div class="practice-content">
+                                <h4>Utiliser un code PIN ou biométrie</h4>
+                                <p>Protégez l'accès à votre téléphone avec un code ou empreinte digitale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <div class="quiz-card">
+                <h2>🧠 Testez vos connaissances</h2>
+                <p>Évaluez votre niveau de compréhension de la cybersécurité avec notre quiz interactif.</p>
+                <a href="quiz.html?topic=cybersecurity" class="btn btn-primary">Commencer le Quiz Cybersécurité</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à mettre en pratique ?</h2>
+                <p>Testez vos compétences avec notre simulateur d'attaque interactif</p>
+                <a href="simulator.html" class="btn btn-secondary">Lancer le Simulateur</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span class="logo-text">CyberSécurité & IA Mali</span>
+                    </div>
+                    <p>Plateforme éducative pour la sécurité numérique et l'intelligence artificielle au Mali.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="cybersecurity.html">Cybersécurité</a></li>
+                        <li><a href="ai.html">Intelligence Artificielle</a></li>
+                        <li><a href="resources.html">Ressources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Outils</h4>
+                    <ul>
+                        <li><a href="simulator.html">Simulateur d'Attaque</a></li>
+                        <li><a href="quiz.html">Quiz Interactifs</a></li>
+                        <li><a href="glossary.html">Glossaire</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 contact@cybersecurite-ia-mali.org</p>
+                    <p>📱 +223 99 99 89 96</p>
+                    <p>📍 Bamako, Mali</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberSécurité & IA Mali. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cybersecurity.js"></script>
+</body>
+</html>
+

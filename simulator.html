@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur d'Attaque - CyberSécurité Mali</title>
+    <meta name="description" content="Simulateur interactif d'attaques cybernétiques pour apprendre la cybersécurité en toute sécurité">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="simulator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">CyberSécurité & IA Mali</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="cybersecurity.html" class="nav-link">Cybersécurité</a>
+                <a href="ai.html" class="nav-link">Intelligence Artificielle</a>
+                <a href="resources.html" class="nav-link">Ressources</a>
+                <a href="about.html" class="nav-link">À Propos</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    🎮 Simulateur d'Attaque Cybernétique
+                </h1>
+                <p class="hero-subtitle">
+                    Apprenez à reconnaître et à vous défendre contre les cyberattaques dans un environnement sécurisé. 
+                    Expérimentez des scénarios réalistes adaptés au contexte malien.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulator Section -->
+    <section class="simulator-section">
+        <div class="container">
+            <!-- Scenario Selection -->
+            <div class="scenario-selection" id="scenario-selection">
+                <h2 class="section-title">Choisissez votre scénario d'apprentissage</h2>
+                <div class="scenarios-grid">
+                    <div class="scenario-card" data-scenario="phishing">
+                        <div class="scenario-icon">🎣</div>
+                        <h3>Attaque de Phishing</h3>
+                        <p>Apprenez à identifier les emails et SMS frauduleux, notamment les fausses alertes Orange Money.</p>
+                        <div class="scenario-difficulty">
+                            <span class="difficulty-label">Difficulté:</span>
+                            <span class="difficulty-level beginner">Débutant</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="startScenario('phishing')">Commencer</button>
+                    </div>
+
+                    <div class="scenario-card" data-scenario="social-engineering">
+                        <div class="scenario-icon">👥</div>
+                        <h3>Ingénierie Sociale</h3>
+                        <p>Découvrez comment les cybercriminels manipulent les victimes pour obtenir des informations sensibles.</p>
+                        <div class="scenario-difficulty">
+                            <span class="difficulty-label">Difficulté:</span>
+                            <span class="difficulty-level intermediate">Intermédiaire</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="startScenario('social-engineering')">Commencer</button>
+                    </div>
+
+                    <div class="scenario-card" data-scenario="mobile-security">
+                        <div class="scenario-icon">📱</div>
+                        <h3>Sécurité Mobile</h3>
+                        <p>Testez vos connaissances sur la sécurité des smartphones et des applications de paiement mobile.</p>
+                        <div class="scenario-difficulty">
+                            <span class="difficulty-label">Difficulté:</span>
+                            <span class="difficulty-level beginner">Débutant</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="startScenario('mobile-security')">Commencer</button>
+                    </div>
+
+                    <div class="scenario-card" data-scenario="password-security">
+                        <div class="scenario-icon">🔐</div>
+                        <h3>Sécurité des Mots de Passe</h3>
+                        <p>Apprenez à créer et gérer des mots de passe sécurisés pour vos comptes en ligne.</p>
+                        <div class="scenario-difficulty">
+                            <span class="difficulty-label">Difficulté:</span>
+                            <span class="difficulty-level intermediate">Intermédiaire</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="startScenario('password-security')">Commencer</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simulator Interface -->
+            <div class="simulator-interface" id="simulator-interface" style="display: none;">
+                <div class="simulator-header">
+                    <h2 id="scenario-title">Scénario en cours</h2>
+                    <div class="simulator-controls">
+                        <button class="btn btn-secondary" onclick="resetSimulator()">Recommencer</button>
+                        <button class="btn btn-outline" onclick="exitSimulator()">Quitter</button>
+                    </div>
+                </div>
+
+                <div class="simulator-content">
+                    <div class="scenario-display" id="scenario-display">
+                        <!-- Le contenu du scénario sera injecté ici -->
+                    </div>
+
+                    <div class="interaction-panel">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="step-counter">
+                            Étape <span id="current-step">1</span> sur <span id="total-steps">5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simulator-footer">
+                    <div class="action-buttons" id="action-buttons">
+                        <!-- Les boutons d'action seront générés dynamiquement -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="results-section" style="display: none;">
+                <div class="results-content">
+                    <h2>Résultats de la Simulation</h2>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span class="score-value" id="final-score">0</span>
+                            <span class="score-label">/ 100</span>
+                        </div>
+                    </div>
+                    <div class="performance-analysis" id="performance-analysis">
+                        <!-- L'analyse sera générée dynamiquement -->
+                    </div>
+                    <div class="recommendations" id="recommendations">
+                        <!-- Les recommandations seront générées dynamiquement -->
+                    </div>
+                    <div class="results-actions">
+                        <button class="btn btn-primary" onclick="resetSimulator()">Essayer un autre scénario</button>
+                        <button class="btn btn-secondary" onclick="shareResults()">Partager les résultats</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Tips Section -->
+    <section class="learning-tips">
+        <div class="container">
+            <h2 class="section-title">Conseils d'Apprentissage</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">💡</div>
+                    <h3>Prenez votre temps</h3>
+                    <p>Lisez attentivement chaque scénario et réfléchissez avant de prendre une décision.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🔄</div>
+                    <h3>Répétez les exercices</h3>
+                    <p>N'hésitez pas à refaire les simulations pour améliorer vos scores et votre compréhension.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">📚</div>
+                    <h3>Consultez les ressources</h3>
+                    <p>Utilisez les guides et articles pour approfondir vos connaissances après chaque simulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span class="logo-text">CyberSécurité & IA Mali</span>
+                    </div>
+                    <p>Plateforme éducative pour la sécurité numérique et l'intelligence artificielle au Mali.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="cybersecurity.html">Cybersécurité</a></li>
+                        <li><a href="ai.html">Intelligence Artificielle</a></li>
+                        <li><a href="resources.html">Ressources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Outils</h4>
+                    <ul>
+                        <li><a href="simulator.html">Simulateur d'Attaque</a></li>
+                        <li><a href="quiz.html">Quiz Interactifs</a></li>
+                        <li><a href="glossary.html">Glossaire</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 contact@cybersecurite-ia-mali.org</p>
+                    <p>📱 +223 99 99 89 96</p>
+                    <p>📍 Bamako, Mali</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberSécurité & IA Mali. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="simulator.js"></script>
+</body>
+</html>
+
