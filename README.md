@@ -13,8 +13,8 @@ The **IA-Cyber** repository is a technical portfolio and resource hub bridging t
 
 ## ✨ Focus Areas
 - 🧠 **Machine Learning applied to Infosec**: Threat detection, anomaly tracking.
-- ðŸ›¡ï¸ **Vulnerability Assessment**: Scripts and tools for automated security auditing.
+- 🛡️ **Vulnerability Assessment**: Scripts and tools for automated security auditing.
 - 📚 **Knowledge Base**: Curated resources and documentation for continuous learning.
 
-## ðŸ‘¨â€ðŸ’» Developer
+## 👨‍💻 Developer
 Built by [BinaryMaoGenius](https://github.com/BinaryMaoGenius).
