@@ -1,20 +1,27 @@
 <div align="center">
-  <h1>🤖 IA & Cybersécurité</h1>
-  <p><strong>A central repository for Artificial Intelligence and Cybersecurity projects, resources, and demonstrations.</strong></p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <img src="assets/banner-light.svg" alt="IA & Cyber Mali" width="100%">
+  </picture>
 </div>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Artificial_Intelligence-FF6F00?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cybersecurity-1C1E24?style=for-the-badge&logo=kali-linux&logoColor=white" />
-</p>
+Site web éducatif pour sensibiliser les jeunes, étudiants et professionnels au Mali à la **cybersécurité** et à l’**intelligence artificielle**, avec des exemples tirés du contexte africain.
 
-## 🚀 Overview
-The **IA-Cyber** repository is a technical portfolio and resource hub bridging the gap between Machine Learning/AI and Information Security. It explores how AI can be leveraged for defensive (Blue Team) and offensive (Red Team) cybersecurity scenarios.
+![HTML5](https://img.shields.io/badge/HTML5-0E0E0C?style=flat-square&logo=html5&logoColor=D9A441) ![CSS3](https://img.shields.io/badge/CSS3-0E0E0C?style=flat-square&logo=css3&logoColor=D9A441) ![JavaScript](https://img.shields.io/badge/JavaScript-0E0E0C?style=flat-square&logo=javascript&logoColor=D9A441)
 
-## ✨ Focus Areas
-- 🧠 **Machine Learning applied to Infosec**: Threat detection, anomaly tracking.
-- 🛡️ **Vulnerability Assessment**: Scripts and tools for automated security auditing.
-- 📚 **Knowledge Base**: Curated resources and documentation for continuous learning.
+## Pages
+- **Accueil** : présentation et objectifs
+- **Cybersécurité** : guide complet (menaces, bonnes pratiques)
+- **Intelligence artificielle** : guide complet (opportunités, dangers, usages éthiques)
+- **Simulateur d’attaque** : scénarios d’apprentissage interactifs, avec résultats et conseils
+- **Ressources** et **À propos**
 
-## 👨‍💻 Developer
-Built by [BinaryMaoGenius](https://github.com/BinaryMaoGenius).
+## Contenu rédigé
+Le dépôt contient aussi les documents de fond (en Markdown) : menaces et bonnes pratiques de cybersécurité au Mali, arnaques courantes, opportunités et dangers de l’IA, usages éthiques, exemples du contexte africain et principes de design.
+
+## Voir le projet
+Le site est statique : ouvre `index.html` dans ton navigateur (ou lance un petit serveur local avec `python3 -m http.server`).
+
+---
+
+Construit par **Emmanuel Elisé Koné** ([BinaryMaoGenius](https://github.com/BinaryMaoGenius)) · *La tech en clair*
