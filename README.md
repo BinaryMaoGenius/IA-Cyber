@@ -22,6 +22,10 @@ Le dépôt contient aussi les documents de fond (en Markdown) : menaces et bonne
 ## Voir le projet
 Le site est statique : ouvre `index.html` dans ton navigateur (ou lance un petit serveur local avec `python3 -m http.server`).
 
+## Licence
+
+Contenus sous [licence CC BY 4.0](./LICENSE) · © 2026 Emmanuel Elisé Koné. Tu peux les réutiliser et les adapter, à condition de me citer.
+
 ---
 
 Construit par **Emmanuel Elisé Koné** ([BinaryMaoGenius](https://github.com/BinaryMaoGenius)) · *La tech en clair*
